@@ -1,0 +1,21 @@
+@import '../../style/typography.sass'
+@import '../../style/colors.sass'
+
+.button
+  width: fit-content
+  padding: 16px 32px
+  @include body_medium
+  border: 1px solid $primary
+  color: $dark_primary
+
+.white
+  background-color: $white
+
+  &:hover
+    background-color: $light_grey
+
+  &:focus
+    background-color: $light_grey
+
+  &:disabled
+    opacity: 50%

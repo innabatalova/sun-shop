@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.sass';
+import logo from './img/logo.svg'
+import styles from './App.module.sass'
+import Button from './components/Button'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.wrapper}>
+      <span className={styles.headline_one}>This is some text</span>
+      <span className={styles.headline_two}>This is some text</span>
+      <span className={styles.headline_three}>This is some text</span>
+      <span className={styles.headline_four}>This is some text</span>
+      <span className={styles.headline_five}>This is some text</span>
+      <span className={styles.headline_six}>This is some text</span>
+      <span className={styles.body_small}>This is some text</span>
+      <span className={styles.body_medium}>This is some text</span>
+      <span className={styles.body_large}>This is some text</span>
+      <img src={logo} className={styles.logo} alt="Logo Malina Shop" />
+      <Button IButtonTextProps='Button' IButtonColorProps ='white'/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
